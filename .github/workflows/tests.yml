@@ -12,7 +12,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Generate required .env file
         run: |
-          echo DEBUG=True >> .env
           echo FLASK_DEBUG=1 >> .env
           echo FLASK_APP=run.py >> .env
       - name: Building containers
