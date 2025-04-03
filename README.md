@@ -7,7 +7,7 @@ A simple boilerplate providing a complete setup to start a new `flask` project
 To build the docker image, simply open a terminal and run the following command:
 
 ```bash
-docker-compose build
+docker compose build
 ```
 
 ## 🖥️ Run the image
@@ -15,7 +15,7 @@ docker-compose build
 To run the image in a docker container, simply open a terminal and run the following command:
 
 ```bash
-docker-compose up flaskdockerstarterkit
+docker compose up flaskdockerstarterkit
 ```
 
 The project will be available on the following URI: `http://127.0.0.1:5000`
@@ -24,19 +24,18 @@ The project will be available on the following URI: `http://127.0.0.1:5000`
 
 To run the image with the VSCode debugger please follow these steps:
 
-- Run the command `docker-compose up debugger` in your terminal, `debugpy` will wait for the VSCode debugger to attach before running the `flask` server
+- Run the command `docker compose up debugger` in your terminal, `debugpy` will wait for the VSCode debugger to attach before running the `flask` server
 - Go to VSCode `Run and Debug` Section
 - Select the `▶️` button with the option `Python: Remote Attach`
 
 And the `flask` server will run successfully, happy debugging ! 🚀
-
 
 ## 🧪 Run tests
 
 To run the tests, please run the following command in your terminal:
 
 ```bash
-docker-compose up test-runner
+docker compose up test-runner
 ```
 
 ## 🕵️ Environment Variables
